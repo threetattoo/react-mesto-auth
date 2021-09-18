@@ -28,6 +28,7 @@ function Register (props) {
         <form onSubmit={handleSubmit} className="sign__form" noValidate>
           <input
             onChange={handleChange}
+            value={data.email || ''}
             className="sign__input"
             id="email"
             type="email"
@@ -37,6 +38,7 @@ function Register (props) {
           />
           <input
             onChange={handleChange}
+            value={data.password || ''}
             className="sign__input sign__input_type_password"
             id="password"
             type="password"
